@@ -1,0 +1,40 @@
+img {
+    width: 50%;
+    height: auto;
+    align-items: center;
+}
+
+.TiraLed{
+    width: 100%;
+    align-items: center;
+}
+
+.focoIndividual{
+    width: 15%;
+    height: auto;
+    align-items: center;
+}
+
+#centrar{
+    text-align: center;
+}
+
+.container-fluid{
+    text-align: center;
+}
+
+.text{
+    text-align: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: inherit;
+}

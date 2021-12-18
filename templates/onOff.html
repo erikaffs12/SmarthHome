@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <title>Encendido y apagado de luces</title>
+  </head>
+
+  <body style="background-color: #E9E1DA;"> 
+    <div class="container-fluid" style="background-color: #0C4876;"> 
+      <h2 style="font-family: 'Coda', cursive; color: aliceblue" id="centrar">
+        Encendido y apagado de luces 
+      </h2>
+    </div>
+    <br>
+    <div class="container-fluid">
+      <div class="row gy-4" >
+        <!--Para Encendido y apagado de luces-->
+        <div class="col-11.5" >
+          <div class="p-3 border bg-light">
+            <div class="container-fluid" style="background-color: #608FB7;"> 
+              <p style="color: white;">Encendido y apagado de luces</p>
+            </div>
+            <div class="container-fluid">
+              <div class="row g-3">
+                <!--Para Foco 1-->
+                <div class="col-4">
+                  <div class="p-3 border bg-light">
+                    <div class="container-fluid" style="background-color: #608FB7;"> 
+                      <p style="font-family: 'Coda', cursive; color: white;">
+                        Foco 1
+                      </p>
+                    </div>
+                    <div class="centrar">         
+                      <img  id="foco 1" src="../static/img/{{luces.0.estado}}.jpg" width="150" alt="Foco" hspace="10" vspace="4"/><br>
+                      <button type="button" class="btn btn-outline-success" onclick="onoff(1,'ON')">On</button>
+                      <button type="button" class="btn btn-outline-danger" onclick="onoff(1,'OFF')">Off</button>
+                    </div>
+                  </div>
+                </div>
+                <!--Para Foco 2-->
+                <div class="col-4">
+                  <div class="p-3 border bg-light">
+                    <div class="container-fluid" style="background-color: #608FB7;"> 
+                      <p style="font-family: 'Coda', cursive; color: white;">
+                        Foco 2
+                      </p>
+                    </div>
+                    <div class="centrar">
+                      <img class="TiraLed" id="foco2" src="../static/img/atenuacion/atenuacion0.jpg" alt="Tira LED"  vspace="30"/> <br>
+                      <button type="button" class="btn btn-outline-success" onclick="intensidad(2,100)">On</button>
+                      <button type="button" class="btn btn-outline-danger" onclick="intensidad(2,0)">Off</button>         
+                    </div>
+                  </div>
+                </div>
+                <!--Para Foco 3-->
+                <div class="col-4">
+                  <div class="p-3 border bg-light">
+                    <div class="container-fluid" style="background-color: #608FB7;"> 
+                      <p style="font-family: 'Coda', cursive; color: white;">
+                        Foco 3
+                      </p>
+                    </div>
+                    <div class="centrar">
+                      <img id="foco 3" src="../static/img/{{luces.2.estado}}.jpg" width="150" alt="Foco"  hspace="10" vspace="4"/> <br>
+                      <button type="button" class="btn btn-outline-success" onclick="onoff(3,'ON')">On</button>
+                      <button type="button" class="btn btn-outline-danger" onclick="onoff(3,'OFF')">Off</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="container-fluid" id="centrar">
+      <br><br>
+      <a href="/" class="links">
+        <button type="button" class="btn btn-primary btn-sm">Volver</button>
+      </a>
+    </div>
+    <script src='/static/js/main.js'></script>     
+  </body>
+</html>
